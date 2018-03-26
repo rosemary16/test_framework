@@ -1,6 +1,5 @@
 import client.implementation.PeopleClient;
 import models.People;
-import models.Starship;
 import org.testng.annotations.Test;
 import producers.PeopleProducer;
 
