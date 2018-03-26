@@ -26,7 +26,7 @@ public class XmlPropertyLoader {
                     props = new Properties();
                     try {
                         FileInputStream fis = new FileInputStream(
-                                "test/src/main/resources/properties.xml");
+                                "src/main/resources/properties.xml");
                         props.loadFromXML(fis);
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
