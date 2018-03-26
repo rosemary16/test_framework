@@ -7,7 +7,7 @@ import static matchers.Matchers.getMatcher;
 
 @Test
 public class StarshipControllerTest {
-    public void getAccountByIdTest(){
+    public void getStarshipByIdTest(){
         Starship expectedStarship = StarshipProducer.produceStarship();
         Starship actualStarship = getStarshipClient()
                 .getStarshipById(StarshipProducer.starshipId)
