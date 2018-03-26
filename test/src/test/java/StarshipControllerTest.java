@@ -1,15 +1,16 @@
 import models.Starship;
 import org.testng.annotations.Test;
+import producers.StarshipProducer;
+
 import static client.implementation.StarshipClient.getStarshipClient;
 import static matchers.Matchers.getMatcher;
-import static producers.StarshipProducer.produceStarship;
 
 @Test
 public class StarshipControllerTest {
     public void getAccountByIdTest(){
-        Starship expectedStarship = produceStarship();
+        Starship expectedStarship = StarshipProducer.produceStarship();
         Starship actualStarship = getStarshipClient()
-                .getStarshipById(5L)
+                .getStarshipById(StarshipProducer.starshipId)
                 .expectedStatusCode(200)
                 .readEntity();
 

@@ -4,6 +4,7 @@ import models.Starship;
 
 public class StarshipProducer {
 
+    public static long starshipId = 5L;
     private static String[] films = {"https://swapi.co/api/films/1/"};
     private static String[] pilots = {};
 
